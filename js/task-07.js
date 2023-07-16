@@ -8,3 +8,4 @@ function changeFontSize() {
 
 fontSizeControl.addEventListener('input', changeFontSize);
 
+changeFontSize();
