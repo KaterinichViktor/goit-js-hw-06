@@ -4,7 +4,7 @@ function validateInput() {
   const enteredValue = validationInput.value;
   const expectedLength = validationInput.getAttribute('data-length');
 
-  if (enteredValue.trim.length === parseInt(expectedLength)) {
+  if (enteredValue.trim().length === parseInt(expectedLength)) {
     validationInput.classList.remove('invalid');
     validationInput.classList.add('valid');
   } else {
