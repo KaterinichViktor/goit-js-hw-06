@@ -1,4 +1,4 @@
-const ingredientsList = document.querySelector('#ingredients');
+const ingredientsList = document.getElementById('ingredients');
 
 const ingredients = [
   'Potatoes',
@@ -9,17 +9,9 @@ const ingredients = [
   'Condiments',
 ];
 
-const fragment = document.createDocumentFragment();
-
-ingredients.forEach((ingredient) => {
-
+const listItemElements = ingredients.map((ingredient) => {
   const listItem = document.createElement('li');
-
   listItem.textContent = ingredient;
-
   listItem.classList.add('item');
-
-  fragment.appendChild(listItem);
+  ingredientsList.appendChild(listItem);
 });
-
-ingredientsList.appendChild(fragment);
