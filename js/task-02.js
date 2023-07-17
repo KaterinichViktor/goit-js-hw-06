@@ -13,5 +13,8 @@ const listItemElements = ingredients.map((ingredient) => {
   const listItem = document.createElement('li');
   listItem.textContent = ingredient;
   listItem.classList.add('item');
+});
+
+listItemElements.forEach((listItem) => {
   ingredientsList.appendChild(listItem);
 });
